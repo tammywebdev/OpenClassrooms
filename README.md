@@ -8,10 +8,10 @@ This repository contains the projects that I completed and presented to professi
 
 The following projects are listed in the order of time: most recent projects are listed on top, least recent projects are listed further down the list.
 
-## To-do app
+## To Do list app
 
-This project is a single page application that can work offline (without internet connectivity) for managing a personal to-do list.
+This project is a single page application that can work offline (without internet connectivity) for managing a personal To Do list.
 
-The Todo list app implements the Model View Controller design pattern using vanilla javascript.
+The [To Do list app](https://github.com/tammywebdev/OpenClassrooms/blob/main/projects/todo-list-app/README.md) implements the Model View Controller design pattern using vanilla javascript.
 
 In order to complete this project, I had to take over the app, fix critical bugs, add unit tests, write technical documentation and compare the app's performance against another competitor app.
