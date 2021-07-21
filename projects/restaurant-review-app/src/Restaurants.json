@@ -1,0 +1,54 @@
+[{
+        "restaurantName": "Mediterranean Chicken",
+        "address": "123 Apple Str 20150 VA",
+        "lat": 38.880520,
+        "long": -77.173730,
+        "ratings": [{
+            "stars": 4,
+            "comment": "Great! But not veggie options."
+        }, {
+            "stars": 5,
+            "comment": "My favorite restaurant."
+        }]
+    },
+    {
+        "restaurantName": "Yayla Bistro",
+        "address": "11221 Banana Rd 20150 VA",
+        "lat": 38.886670,
+        "long": -77.162470,
+        "ratings": [{
+            "stars": 5,
+            "comment": "Very good food!!!."
+        }, {
+            "stars": 5,
+            "comment": "Great place to eat."
+        }]
+    },
+    {
+        "restaurantName": "Badd Pizza",
+        "address": "34125 Coconut Dr 20150 VA ",
+        "lat": 38.884830,
+        "long": -77.174250,
+        "ratings": [{
+            "stars": 2,
+            "comment": "No Parking."
+        }, {
+            "stars": 3,
+            "comment": "Good food."
+        }]
+    },
+    {
+        "restaurantName": "Sfizi Cafe",
+        "address": "43572 Pinaple Rd 20150 VA",
+        "lat": 38.888538,
+        "long": -77.180161,
+        "ratings": [{
+            "stars": 4,
+            "comment": "Desert ie great"
+        }, {
+            "stars": 5,
+            "comment": "Nice service."
+        }]
+    }
+
+]

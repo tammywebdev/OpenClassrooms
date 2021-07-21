@@ -1,0 +1,9 @@
+.navbar-brand {
+    font-family: 'Righteous';
+    color: white !important;
+    font-size: 60px;
+}
+
+.navbar {
+    margin-bottom: -31px;
+}

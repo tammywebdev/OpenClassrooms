@@ -1,0 +1,35 @@
+.map-container {
+    padding: 0 !important;
+    height: 700px;
+}
+
+.restaurant-list-container {
+    border-top: solid 1px lightgray;
+    border-bottom: solid 1px lightgray;
+    padding: 0 !important;
+    height: 700px;
+    overflow-y: scroll;
+    background-color: white;
+}
+
+.flex-container {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.5ch;
+}
+
+.border-large {
+    border: 10px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.2);
+    margin-top: 31px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.no-scroll {
+    overflow-y: hidden;
+}

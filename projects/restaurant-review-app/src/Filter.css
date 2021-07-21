@@ -1,0 +1,10 @@
+.filter-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    bottom: -55px;
+    right: 27px;
+    z-index: 1;
+    gap: .5ch;
+}
