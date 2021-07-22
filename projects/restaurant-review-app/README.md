@@ -1,6 +1,6 @@
 # Restaurant Review Site
 
-This project is a web app built with React Javascript library. It uses external APIs: Google Maps and Google Places.
+This project is a web app built with [React Javascript library](https://reactjs.org/). It uses external APIs: [Google Maps](https://developers.google.com/maps/gmp-get-started) (through the [Google Map React library](https://github.com/google-map-react/google-map-react)) and [Google Places](https://developers.google.com/maps/documentation/places/web-service/overview).
 
 ## Main Features
 
