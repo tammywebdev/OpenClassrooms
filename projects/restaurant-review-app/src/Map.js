@@ -42,7 +42,7 @@ class Map extends React.Component {
             <>
                 <GoogleMapReact
                     bootstrapURLKeys={{
-                        key: "AIzaSyAk0HPZEh3uKLSbO1gkRM_woxaYR4TxlcU", libraries: ['places']
+                        key: "ENTER_GOOGLE_MAPS_API_KEY_HERE", libraries: ['places']
                     }}
                     center={this.state}
                     defaultZoom={14}
@@ -83,7 +83,7 @@ class Map extends React.Component {
                     <Modal.Footer>
                         <Button variant="secondary" onClick={() => this.handleHideModal()}>
                             Cancel
-                </Button>
+                        </Button>
                         <Button variant="primary" onClick={() => this.handleSubmit()}>Submit</Button>
                     </Modal.Footer>
                 </Modal>
