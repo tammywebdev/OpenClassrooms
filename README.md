@@ -21,3 +21,9 @@ In order to complete this project, I had to take over the app, fix critical bugs
 This project is a single page application for searching and rating restaurants interactively on a map UI.
 
 The [Restaurant Review Site](https://github.com/tammywebdev/OpenClassrooms/blob/main/projects/restaurant-review-app/README.md) uses React Js, Google Maps API, React Bootstrap.
+
+## Board Game
+
+This is a browser-based game. It can support 2 players on the same computer to play by turn.
+
+The [Board Game](https://github.com/tammywebdev/OpenClassrooms/blob/main/projects/board-game/README.md) is built with pure (vanilla) javascript without any dependencies. It also uses Twitter Bootstrap for the layout.
