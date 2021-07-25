@@ -1,0 +1,131 @@
+.grid {
+    display: inline-grid;
+    grid-template-columns: repeat(10, 1fr);
+    height: 400px;
+    width: 400px;
+    background-color: var(--bs-light);
+    padding: 0;
+}
+
+.grid-cell {
+    border-left: solid 1px var(--bs-dark);
+    border-top: solid 1px var(--bs-dark);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-cell:nth-of-type(10n) {
+    border-right: solid 1px var(--bs-dark);
+}
+
+.grid-cell:nth-child(n+91):nth-child(-n+100) {
+    border-bottom: solid 1px var(--bs-dark);
+}
+
+.obstacle {
+    background-color: var(--bs-dark);
+}
+
+.h-w-100 {
+    height: 100px;
+    width: 100px;
+}
+
+.highlight-player-1 {
+    background-color: var(--bs-warning);
+    cursor: pointer;
+}
+
+.highlight-player-2 {
+    background-color: var(--bs-info);
+    cursor: pointer;
+}
+
+.highlight-player-1.weapon-1 {
+    background: url(img/banana.png) no-repeat center center, linear-gradient(to right, var(--bs-warning), var(--bs-warning));
+    background-size: contain;
+}
+
+.highlight-player-1.weapon-2 {
+    background: url(img/tomato.png) no-repeat center center, linear-gradient(to right, var(--bs-warning), var(--bs-warning));
+    background-size: contain;
+}
+
+.highlight-player-1.weapon-3 {
+    background: url(img/coconut.png) no-repeat center center, linear-gradient(to right, var(--bs-warning), var(--bs-warning));
+    background-size: contain;
+}
+
+.highlight-player-1.weapon-4 {
+    background: url(img/pineapple.png) no-repeat center center, linear-gradient(to right, var(--bs-warning), var(--bs-warning));
+    background-size: contain;
+}
+
+.highlight-player-2.weapon-1 {
+    background: url(img/banana.png) no-repeat center center, linear-gradient(to right, var(--bs-info), var(--bs-info));
+    background-size: contain;
+}
+
+.highlight-player-2.weapon-2 {
+    background: url(img/tomato.png) no-repeat center center, linear-gradient(to right, var(--bs-info), var(--bs-info));
+    background-size: contain;
+}
+
+.highlight-player-2.weapon-3 {
+    background: url(img/coconut.png) no-repeat center center, linear-gradient(to right, var(--bs-info), var(--bs-info));
+    background-size: contain;
+}
+
+.highlight-player-2.weapon-4 {
+    background: url(img/pineapple.png) no-repeat center center, linear-gradient(to right, var(--bs-info), var(--bs-info));
+    background-size: contain;
+}
+
+.player-1 {
+    background: url(img/monkey.png) no-repeat center center;
+    background-size: contain;
+}
+
+.player-2 {
+    background: url(img/pig.png) no-repeat center center;
+    background-size: contain;
+}
+
+.weapon-1 {
+    background: url(img/banana.png) no-repeat center center;
+    background-size: contain;
+}
+
+.weapon-2 {
+    background: url(img/tomato.png) no-repeat center center;
+    background-size: contain;
+}
+
+.weapon-3 {
+    background: url(img/coconut.png) no-repeat center center;
+    background-size: contain;
+}
+
+.weapon-4 {
+    background: url(img/pineapple.png) no-repeat center center;
+    background-size: contain;
+}
+
+#staticBackdrop .modal-header {
+    justify-content: center;
+}
+
+#staticBackdrop .modal-body {
+    display: flex;
+    justify-content: center;
+}
+
+#staticBackdrop .modal-footer {
+    justify-content: center;
+}
+
+.player-weapon {
+    display: inline-block;
+    height: 2rem;
+    width: 2rem;
+}

@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+
+
+    <title>OpenClassroom-Project6-BoardGame</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="text-center pb-5 pt-5 ">Board Game</h1>
+        <div class="row">
+            <div class="col-3">
+
+                <div class="card text-center">
+
+                    <div class="card-body highlight-player-1">
+                        <h5 class="card-title pt-5">Player 1</h5>
+                        <div class="d-inline-block h-w-100 player-1">
+                            <!-- 🐵 -->
+                        </div>
+                        <p class="card-text">
+                            Life: <span id="spanPlayer1Life">100</span>
+                        </p>
+                        <p>
+                            Weapon:
+                            <div id="divPlayer1Weapon" class="player-weapon weapon-1">
+                                <!-- 🍌 -->
+                            </div>
+                        </p>
+                    </div>
+                    <div class="card-footer d-none">
+                        <h1 id="textPlayer1Status"></h1>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 text-center">
+
+                <div class="grid">
+                    <div id="gridCell0_0" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell0_1" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell0_2" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell0_3" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell0_4" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell0_5" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell0_6" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell0_7" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell0_8" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell0_9" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell1_0" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell1_1" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell1_2" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell1_3" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell1_4" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell1_5" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell1_6" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell1_7" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell1_8" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell1_9" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell2_0" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell2_1" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell2_2" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell2_3" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell2_4" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell2_5" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell2_6" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell2_7" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell2_8" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell2_9" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell3_0" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell3_1" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell3_2" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell3_3" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell3_4" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell3_5" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell3_6" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell3_7" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell3_8" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell3_9" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell4_0" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell4_1" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell4_2" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell4_3" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell4_4" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell4_5" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell4_6" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell4_7" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell4_8" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell4_9" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell5_0" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell5_1" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell5_2" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell5_3" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell5_4" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell5_5" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell5_6" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell5_7" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell5_8" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell5_9" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell6_0" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell6_1" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell6_2" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell6_3" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell6_4" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell6_5" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell6_6" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell6_7" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell6_8" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell6_9" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell7_0" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell7_1" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell7_2" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell7_3" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell7_4" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell7_5" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell7_6" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell7_7" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell7_8" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell7_9" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell8_0" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell8_1" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell8_2" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell8_3" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell8_4" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell8_5" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell8_6" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell8_7" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell8_8" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell8_9" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell9_0" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell9_1" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell9_2" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell9_3" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell9_4" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell9_5" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell9_6" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell9_7" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell9_8" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                    <div id="gridCell9_9" class="grid-cell">
+                        <div class="player"></div>
+                        <div class="weapon"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card text-center">
+
+                    <div class="card-body highlight-player-2">
+                        <h5 class="card-title pt-5">Player 2</h5>
+                        <div class="d-inline-block h-w-100 player-2">
+
+                        </div>
+                        <p class="card-text">
+
+                            Life: <span id="spanPlayer2Life">100</span>
+                        </p>
+
+                        <p>
+                            Weapon:
+                            <div id="divPlayer2Weapon" class="player-weapon weapon-1">
+
+                            </div>
+
+                        </p>
+
+
+
+
+                    </div>
+                    <div class="card-footer d-none">
+                        <h1 id="textPlayer2Status"></h1>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Button trigger battle modal -->
+        <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalBattle">
+            Launch battle modal
+        </button> -->
+
+        <!-- Battle Modal -->
+        <div class="modal fade" id="modalBattle" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalBattleLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalBattleLabel">Battle</h5>
+
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card text-center">
+
+                                        <div class="card-body highlight-player-1">
+                                            <h5 class="card-title">Player 1</h5>
+                                            <div class="d-inline-block h-w-100 player-1">
+
+                                            </div>
+                                            <p class="card-text">
+                                                Life: <span id="spanBattlePlayer1Life">100</span>
+                                            </p>
+                                            <p>
+                                                Weapon:
+                                                <div id="divBattlePlayer1Weapon" class="player-weapon weapon-1">
+
+                                                </div>
+                                            </p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="d-inline-block text-start">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" id="inputPlayer1Attack" name="player1-action" value="attack" checked>
+                                                    <label class="form-check-label" for="inputPlayer1Attack">Attack</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" id="inputPlayer1Defend" name="player1-action" value="defend">
+                                                    <label class="form-check-label" for="inputPlayer1Defend">Defend</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col">
+                                    <div class="card text-center">
+
+                                        <div class="card-body highlight-player-2">
+                                            <h5 class="card-title">Player 2</h5>
+                                            <div class="d-inline-block h-w-100 player-2">
+                                                <!-- 🐷 -->
+                                            </div>
+                                            <p class="card-text">
+
+                                                Life: <span id="spanBattlePlayer2Life">100</span>
+                                            </p>
+                                            <!-- 🍌 -->
+
+                                            <p>
+                                                Weapon:
+                                                <div id="divBattlePlayer2Weapon" class="player-weapon weapon-1">
+
+                                                </div>
+
+                                            </p>
+
+
+
+
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="d-inline-block text-start">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" id="inputPlayer2Attack" name="player2-action" value="attack" checked>
+                                                    <label class="form-check-label" for="inputPlayer2Attack">Attack</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" id="inputPlayer2Defend" name="player2-action" value="defend">
+                                                    <label class="form-check-label" for="inputPlayer2Defend">Defend</label>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button id="buttonGo" type="button" class="btn btn-secondary " data-bs-dismiss="modal">Go</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Battle Modal -->
+
+        <!-- Button trigger game over modal -->
+        <!-- <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalGameOver">
+            Launch game over modal
+        </button> -->
+
+        <!-- Game Over Modal -->
+        <div class="modal fade" id="modalGameOver" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalGameOverLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalGameOverLabel">Game Over</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Please refresh your brownser to start a new game.
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- End of Game Over Modal -->
+
+
+        <section class="text-center bg-light mt-5">
+
+            <h3 class="pb-3 pt-3">How to play</h3>
+            <div class="text-start d-inline-block">
+                <ol>
+                    <li>For each turn, a player can move from one to three boxes (horizontally or vertically) before ending their turn. They obviously can not pass through obstacles directly.
+                        <ul>
+                            <li>
+                                If a player passes over a box containing a weapon, they leave their current weapon on site and replace it with the new one.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>If players cross over adjacent squares (horizontally or vertically), a battle begins.
+
+                    </li>
+                    <li>During combat, the game works is as follows:</li>
+
+                    <ul>
+                        <li>Each player plays in turn;</li>
+                        <li>The player can choose to attack or defend against the next shot;</li>
+                        <li>The damage depends on the player's weapon;</li>
+                        <li>If the player chooses to defend themselves, they sustain 50% less damage than normal;</li>
+                        <li>As soon as the life points of a player (initially 100) falls to 0, they lose. A message appears and the game is over.</li>
+                    </ul>
+
+
+                </ol>
+            </div>
+        </section>
+        <section class="text-center">
+            <p>
+                Created by Tammy
+            </p>
+
+        </section>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
