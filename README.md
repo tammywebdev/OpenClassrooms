@@ -27,3 +27,9 @@ The [Restaurant Review Site](https://github.com/tammywebdev/OpenClassrooms/blob/
 This is a browser-based game. It can support 2 players on the same computer to play by turn.
 
 The [Board Game](https://github.com/tammywebdev/OpenClassrooms/blob/main/projects/board-game/README.md) is built with pure (vanilla) javascript without any dependencies. It also uses Twitter Bootstrap for the layout.
+
+## Film Festival
+
+This is a responsive website. It is responsive to tablet and mobile screen sizes.
+
+The [Film Festival website](https://github.com/tammywebdev/OpenClassrooms/blob/main/projects/film-festival/README.md) is built with Twitter Bootstrap.
