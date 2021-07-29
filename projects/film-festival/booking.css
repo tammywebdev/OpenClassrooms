@@ -1,0 +1,75 @@
+body {
+    background-color: transparent;
+}
+
+header {
+    background-image: url("img/drive-in-banner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.header-div-tall {
+    min-height: 350px;
+}
+
+.header-text-bottom {
+    margin-top: 120px;
+}
+
+.footerx {
+    min-height: 680px;
+}
+
+.footerx .input-group {
+    width: 50%;
+}
+
+.footerx a {
+    color: white;
+}
+
+.footerx a:hover {
+    text-decoration: underline;
+}
+
+.card:target {
+    background-color: var(--warning) !important;
+}
+
+.card-body {
+    min-height: 7rem;
+}
+
+@media (max-width: 576px) {
+    .navbar h3,
+    h1 {
+        font-size: 1.5rem;
+    }
+    .navbar-toggler {
+        background-color: var(--dark);
+    }
+    .navbar-collapse {
+        background-color: rgba(52, 58, 64, 0.7);
+        padding: 1rem;
+    }
+    .modal-content {
+        width: 70%;
+    }
+    .ann-all-rows .row:nth-of-type(even) {
+        flex-direction: column-reverse;
+    }
+    .footerx .input-group {
+        flex-direction: column;
+    }
+    .footerx .input-group * {
+        width: 100%;
+    }
+    img.card-img-top {
+        width: 100px;
+        height: 100px;
+    }
+    .card {
+        flex-direction: row;
+    }
+}

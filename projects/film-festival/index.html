@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Festival</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+
+        <div class="container">
+            <div class="row">
+                <div class="col header-div-tall">
+                    <nav class="navbar navbar-expand-lg navbar-dark">
+                        <a class="navbar-brand text-capitalize" href="/index.html">
+                            <h3>
+                                WATCH IT OUTSIDE
+                                <br>
+                                <small class="text-warning">FILM FESTIVAL</small>
+                            </h3>
+                        </a>
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+
+
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" onclick="window.location.href='/booking.html'">Book Tickets </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#carouselFilmIndicators">Films</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/schedule.html">Schedule</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#footer">About Us</a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    </nav>
+                    <h1 class="text-light header-text-bottom ">STORIES CAN <br> CHANGE THE WORLD</h1>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <section class="films" id="sectionFilms">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center pt-5 pb-4 border-bottom  border-dark">
+                    <h4>2020 FILM FESTIVAL</h4>
+                    <p class="text-muted font-italic mb-4">12 films</p>
+                    <!-- Start of carousel -->
+                    <div id="carouselFilmIndicators" class="carousel slide mb-4" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselFilmIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselFilmIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselFilmIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+
+                            <!--Carousel: First slide -->
+                            <div class="carousel-item active">
+                                <div class="card-deck">
+                                    <!-- Card 1 -->
+                                    <div class="card bg-dark text-white" data-toggle="modal" data-target="#Burden">
+                                        <img class="card-img" src="img/film1.jpg" alt="Card image">
+                                        <div class="front-side position-absolute pl-4 w-100 py-4">
+                                            <h5 class="card-title mb-0">Burden</h5>
+
+                                            <small class="card-text">Narrative</small>
+                                        </div>
+                                        <div class="back-side position-absolute px-4 w-100 py-4 text-left">
+                                            <h5 class="card-title mb-0">Burden</h5>
+                                            <small class="card-text">Narrative</small>
+                                            <p class="card-text">
+
+                                                Ku Klux Klansman Mike Burden opens the Redneck Shop and KKK museum in historic Laurens, South Carolina. He subsequently falls in love with a single mom, and, under her influence, quits the Klan and is taken in by an African American Reverend.
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                    <!-- End of card 1 -->
+
+                                    <!-- Card 2 -->
+                                    <div class="card bg-dark text-white" data-toggle="modal" data-target="#TheNeighborsWindow">
+                                        <img class="card-img" src="img/film2.jpg" alt="Card image">
+                                        <div class="front-side position-absolute pl-4 w-100 py-4">
+                                            <h5 class="card-title mb-0">Amaterasu</h5>
+
+                                            <small class="card-text">Short</small>
+                                        </div>
+                                        <div class="back-side position-absolute px-4 w-100 py-4 text-left">
+                                            <h5 class="card-title mb-0">Amaterasu</h5>
+                                            <small class="card-text">Short</small>
+                                            <p class="card-text">
+
+                                                Amaterasu is based on a traditional Japanese story of the sun goddess and her volatile relationship with her brother, Susanowo. The film was shot entirely with marionettes and sets made of found objec...
+
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                    <!-- End of card 2 -->
+                                    <!-- Card 3 -->
+                                    <div class="card bg-dark text-white" data-toggle="modal" data-target="#OurTimeMachine">
+                                        <img class="card-img" src="img/film3.jpg" alt="Card image">
+                                        <div class="front-side position-absolute pl-4 w-100 py-4">
+                                            <h5 class="card-title mb-0">Our Time Machine</h5>
+
+                                            <small class="card-text">Documentary</small>
+                                        </div>
+                                        <div class="back-side position-absolute px-4 w-100 py-4 text-left">
+                                            <h5 class="card-title mb-0">Our Time Machine</h5>
+                                            <small class="card-text">Documentary</small>
+                                            <p class="card-text">
+                                                When Maleonn realizes that his father suffers from Alzheimer’s disease, he creates the Papa’s Time Machine, a magical, autobiographical stage performance featuring life-size mechanical puppets to ...
+
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                    <!-- End of card 3 -->
+
+                                    <!-- Card 4 -->
+                                    <div class="card bg-dark text-white" data-toggle="modal" data-target="#GreenerGrass">
+                                        <img class="card-img" src="img/film4.jpg" alt="Card image">
+                                        <div class="front-side position-absolute pl-4 w-100 py-4">
+                                            <h5 class="card-title mb-0">Greener Grass</h5>
+
+                                            <small class="card-text">Short</small>
+                                        </div>
+                                        <div class="back-side position-absolute px-4 w-100 py-4 text-left">
+                                            <h5 class="card-title mb-0">Short Program: Greener Grass</h5>
+                                            <small class="card-text">Short</small>
+                                            <p class="card-text">A colorful cast of characters long for what's just out of reach. Filmmakers will participate in a Q&amp;A following each screening. 100% of ticket sales from each screening will be donated to Ki...
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                    <!-- End of card 4 -->
+
+                                </div>
+                            </div>
+                            <!-- End of First Slide -->
+
+
+                            <!-- Carousel: Second Slide -->
+                            <div class="carousel-item">
+                                <div class="card-deck">
+
+                                    <!-- Card 5 -->
+                                    <div class="card bg-dark text-white" data-toggle="modal" data-target="#HoneyBee">
+                                        <img class="card-img" src="img/film5.jpg" alt="Card image">
+                                        <div class="front-side position-absolute pl-4 w-100 py-4">
+                                            <h5 class="card-title mb-0">Honey Bee</h5>
+
+                                            <small class="card-text">Narrative</small>
+                                        </div>
+                                        <div class="back-side position-absolute px-4 w-100 py-4 text-left">
+                                            <h5 class="card-title mb-0">Honey Bee</h5>
+                                            <small class="card-text">Narrative</small>
+                                            <p class="card-text">
+
+                                                Honey Bee follows the journey of quick-witted Natalie “Honey Bee” Sorensen, an underage truck stop prostitute trapped in a human trafficking ring and controlled by her pimp-boyfriend until she is ... </p>
+                                        </div>
+
+                                    </div>
+                                    <!-- End of card 5 -->
+
+
+                                    <!-- Card 6 -->
+                                    <div class="card bg-dark text-white" data-toggle="modal" data-target="#TheNeighborsWindow">
+                                        <img class="card-img" src="img/film6.jpg" alt="Card image">
+                                        <div class="front-side position-absolute pl-4 w-100 py-4">
+                                            <h5 class="card-title mb-0">The Neighbor's Window</h5>
+
+                                            <small class="card-text">Short</small>
+                                        </div>
+                                        <div class="back-side position-absolute px-4 w-100 py-4 text-left">
+                                            <h5 class="card-title mb-0">The Neighbor's Window</h5>
+                                            <small class="card-text">Short</small>
+                                            <p class="card-text">
+
+                                                The Neighbors' Window tells the story of a middle-aged woman with small children whose life is shaken up when two free-spirited twenty-somethings move in across the street. It is the first foray into ...
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                    <!-- End of card 6 -->
+
+                                    <!-- Card 7 -->
+                                    <div class="card bg-dark text-white" data-toggle="modal" data-target="#TheDiswasher">
+                                        <img class="card-img" src="img/film7.jpg" alt="Card image">
+                                        <div class="front-side position-absolute pl-4 w-100 py-4">
+                                            <h5 class="card-title mb-0">Our Time Machine</h5>
+
+                                            <small class="card-text">Documentary</small>
+                                        </div>
+                                        <div class="back-side position-absolute px-4 w-100 py-4 text-left">
+                                            <h5 class="card-title mb-0">The Diswasher</h5>
+                                            <small class="card-text">Short</small>
+                                            <p class="card-text">
+                                                A chef at a fine dining restaurant in New York City asks a Mexican dishwasher to find good tortillas. 100% of ticket sales from each screening will be donated to Kids in the Spotlight.
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                    <!-- End of card 7 -->
+
+                                    <!-- Card 8 -->
+                                    <div class="card bg-dark text-white" data-toggle="modal" data-target="#BeachDay">
+                                        <img class="card-img" src="img/film8.jpg" alt="Card image">
+                                        <div class="front-side position-absolute pl-4 w-100 py-4">
+                                            <h5 class="card-title mb-0">Beach Day</h5>
+
+                                            <small class="card-text">Short</small>
+                                        </div>
+                                        <div class="back-side position-absolute px-4 w-100 py-4 text-left">
+                                            <h5 class="card-title mb-0">Short Program: Beach Day</h5>
+                                            <small class="card-text">Short</small>
+                                            <p class="card-text">Lexi and Sam's normal day at the beach takes a dark turn when Sam suspects Lexi may have more sinister motives. Max Silver (Director, Writer, Producer) and Rachel Sklar (Producer) will participate ...
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                    <!-- End of card 8 -->
+
+                                </div>
+                            </div>
+                            <!-- End of Second Slide -->
+
+
+
+                            <!-- Carousel: Third Slide -->
+                            <div class="carousel-item">
+                                <div class="card-deck">
+
+                                    <!-- Card 9 -->
+                                    <div class="card bg-dark text-white" data-toggle="modal" data-target="#Westfalia">
+                                        <img class="card-img" src="img/film9.jpg" alt="Card image">
+                                        <div class="front-side position-absolute pl-4 w-100 py-4">
+                                            <h5 class="card-title mb-0">Westfalia
+                                                <small class="card-text">Short</small>
+                                        </div>
+                                        <div class="back-side position-absolute px-4 w-100 py-4 text-left">
+                                            <h5 class="card-title mb-0">Westfalia</h5>
+                                            <small class="card-text">Short</small>
+                                            <p class="card-text">
+
+                                                A couple embarks on an epic road trip in an attempt to gain more followers after their Instagram rival's fame doubles overnight. Haley Finnegan (Director, Writer, Producer, Cast) and Montana Loran ... </div>
+
+                                    </div>
+                                    <!-- End of card 9 -->
+
+                                    <!-- Card 10 -->
+                                    <div class="card bg-dark text-white" data-toggle="modal" data-target="#Peggy">
+                                        <img class="card-img" src="img/film10.jpg" alt="Card image">
+                                        <div class="front-side position-absolute pl-4 w-100 py-4">
+                                            <h5 class="card-title mb-0">Peggy</h5>
+
+                                            <small class="card-text">Short</small>
+                                        </div>
+                                        <div class="back-side position-absolute px-4 w-100 py-4 text-left">
+                                            <h5 class="card-title mb-0">Peggy</h5>
+                                            <small class="card-text">Short</small>
+                                            <p class="card-text">
+                                                Everything seems to work out perfectly for Peggy, but her social graces are put to the test when she is surrounded by admiring and covetous parents at her eight-year-old son's birthday party. Justi...
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                    <!-- End of card 10 -->
+
+                                    <!-- Card 11 -->
+                                    <div class="card bg-dark text-white" data-toggle="modal" data-target="#StandingUpFallingDown">
+                                        <img class="card-img" src="img/film11.jpg" alt="Card image">
+                                        <div class="front-side position-absolute pl-4 w-100 py-4">
+                                            <h5 class="card-title mb-0">Standing Up Falling Down</h5>
+
+                                            <small class="card-text">Narrative</small>
+                                        </div>
+                                        <div class="back-side position-absolute px-4 w-100 py-4 text-left">
+                                            <h5 class="card-title mb-0">Standing Up Falling Down</h5>
+                                            <small class="card-text">Narrative</small>
+                                            <p class="card-text">
+                                                A struggling stand-up comedian at a crossroads in his life returns to his hometown and finds an unlikely kindred spirit in his pot-smoking dermatologist. Matt Ratner (Director, Producer) will parti...
+                                            </p>
+                                        </div>
+
+
+                                    </div>
+                                    <!-- End of card 11 -->
+
+                                    <!-- Card 12 -->
+                                    <div class="card bg-dark text-white" data-toggle="modal" data-target="#RocketBoy">
+                                        <img class="card-img" src="img/film12.jpg" alt="Card image">
+                                        <div class="front-side position-absolute pl-4 w-100 py-4">
+                                            <h5 class="card-title mb-0">Rocket Boy</h5>
+
+                                            <small class="card-text">Short</small>
+                                        </div>
+                                        <div class="back-side position-absolute px-4 w-100 py-4 text-left">
+                                            <h5 class="card-title mb-0">Short Program: Greener Grass</h5>
+                                            <small class="card-text">Short</small>
+                                            <p class="card-text">As we reach the 50th anniversary of the first people traveling to the moon, Rocket Boy is the account of a man who witnessed, first hand, the launch of that rocket. As he recalls the awe-inspiring eve...
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                    <!-- End of card 12 -->
+
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselFilmIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselFilmIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <!-- End of carousel -->
+
+                    <!-- Modal 1 -->
+                    <div class="modal fade text-dark" id="Burden" tabindex="-1" role="dialog" aria-labelledby="BurdenTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Burden</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                                </div>
+                                <div class="modal-body text-left">
+                                    <p>
+
+                                        Ku Klux Klansman Mike Burden opens the Redneck Shop and KKK museum in historic Laurens, South Carolina. He subsequently falls in love with a single mom, and, under her influence, quits the Klan and is taken in by an African American Reverend.
+                                    </p>
+                                    <h6>Media</h6>
+
+                                    <div class="card-group" id="mediaContainerFilm1">
+                                        <a target="_blank" href="https://www.youtube.com/embed/Um4OQEWwpS4">
+                                            <div class="card">
+                                                <iframe class="card-img-top" src="https://www.youtube.com/embed/Um4OQEWwpS4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="img/Burden1.jpg">
+                                            <div class="card">
+                                                <div class="card-img-top"></div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="img/Burden2.jpg">
+                                            <div class="card">
+                                                <div class="card-img-top"></div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <a type="button" class="btn btn-primary" href="booking.html#cardFilm1">Book Tickets</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of Modal 1 -->
+
+                    <!-- Modal 2 -->
+                    <div class="modal fade text-dark" id="Amaterasu" tabindex="-1" role="dialog" aria-labelledby="AmaterasuTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Amaterasu</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body text-left">
+                                    <p>
+
+                                        Amaterasu is based on a traditional Japanese story of the sun goddess and her volatile relationship with her brother, Susanowo. The film was shot entirely with marionettes and sets made of found objec...
+
+                                    </p>
+                                    <h6>Media</h6>
+
+                                    <div class="card-group">
+                                        <a target="_blank" href="img/Amaterasu1.jpg">
+                                            <div class="card">
+                                                <div class="card-img-top" style="background-image: url('/img/Amaterasu1.jpg')">
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="img/Amaterasu2.jpg">
+                                            <div class="card">
+                                                <div class="card-img-top" style="background-image: url('/img/Amaterasu2.jpg')"></div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="img/Amaterasu3.jpg">
+                                            <div class="card">
+                                                <div class="card-img-top" style="background-image: url('/img/Amaterasu3.jpg')"></div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <a type="button" class="btn btn-primary" href="booking.html#cardFilm2">Book Tickets</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of Modal 2 -->
+
+                    <!-- Modal 3 -->
+                    <div class="modal fade text-dark" id="OurTimeMachine" tabindex="-1" role="dialog" aria-labelledby="OurTimeMachineTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">OurTimeMachine</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body text-left">
+                                    <p>
+                                        When Maleonn realizes that his father suffers from Alzheimer’s disease, he creates the Papa’s Time Machine, a magical, autobiographical stage performance featuring life-size mechanical puppets to ...
+                                    </p>
+                                    <h6>Media</h6>
+
+                                    <div class="card-group">
+                                        <a target="_blank" href="img/OurTimeMachine1.jpg">
+                                            <div class="card">
+                                                <div class="card-img-top" style="background-image: url('/img/OurTimeMachine1.jpg')">
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="img/OurTimeMachine2.jpg">
+                                            <div class="card">
+                                                <div class="card-img-top" style="background-image: url('/img/OurTimeMachine2.jpg')"></div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="img/OurTimeMachine3.jpg">
+                                            <div class="card">
+                                                <div class="card-img-top" style="background-image: url('/img/OurTimeMachine3.jpg')"></div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <a type="button" class="btn btn-primary" href="booking.html#cardFilm3">Book Tickets</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of Modal 3 -->
+
+                    <!-- Modal 4 -->
+                    <div class="modal fade text-dark" id="GreenerGrass" tabindex="-1" role="dialog" aria-labelledby="GreenerGrassTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">GreenerGrass</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body text-left">
+                                    <p> A colorful cast of characters long for what’s just out of reach. Filmmakers will participate in a Q&A following each screening. 100% of ticket sales from each screening will be donated to Kids in the Spotlight.</p>
+                                    <h6>Media</h6>
+
+                                    <div class="card-group">
+                                        <a target="_blank" href="img/GreenerGrass1.jpg">
+                                            <div class="card">
+                                                <div class="card-img-top" style="background-image: url('/img/GreenerGrass1.jpg')">
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="img/GreenerGrass2.jpg">
+                                            <div class="card">
+                                                <div class="card-img-top" style="background-image: url('/img/GreenerGrass2.jpg')"></div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="img/GreenerGrass3.jpg">
+                                            <div class="card">
+                                                <div class="card-img-top" style="background-image: url('/img/GreenerGrass3.jpg')"></div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <a type="button" class="btn btn-primary" href="booking.html#cardFilm4">Book Tickets</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of Modal 4 -->
+
+                    <!-- Modal 5 -->
+                    <div class="modal fade text-dark" id="HoneyBee" tabindex="-1" role="dialog" aria-labelledby="HoneyBeeTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">HoneyBee</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body text-left">
+                                    <p>
+
+                                        Honey Bee follows the journey of quick-witted Natalie “Honey Bee” Sorensen, an underage truck stop prostitute trapped in a human trafficking ring and controlled by her pimp-boyfriend until she is ... </p>
+                                    <h6>Media</h6>
+
+                                    <div class="card-group">
+                                        <a target="_blank" href="https://www.youtube.com/embed/mwI_nsDTQMk">
+                                            <div class="card">
+                                                <iframe width="960" height="634" src="https://www.youtube.com/embed/mwI_nsDTQMk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="img/HoneyBee1.jpg">
+                                            <div class="card">
+                                                <div class="card-img-top" style="background-image: url('/img/HoneyBee1.jpg')"></div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="img/HoneyBee2.jpg">
+                                            <div class="card">
+                                                <div class="card-img-top" style="background-image: url('/img/HoneyBee2.jpg')"></div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <a type="button" class="btn btn-primary" href="booking.html#cardFilm5">Book Tickets</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of Modal 5 -->
+
+                    <!-- Modal 6 -->
+                    <div class="modal fade text-dark" id="TheNeighborsWindow" tabindex="-1" role="dialog" aria-labelledby="TheNeighborsWindowTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">TheNeighborsWindow</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body text-left">
+                                    <p>
+
+                                        The Neighbors' Window tells the story of a middle-aged woman with small children whose life is shaken up when two free-spirited twenty-somethings move in across the street. It is the first foray into ...
+                                    </p>
+                                    <h6>Media</h6>
+
+                                    <div class="card-group cardx">
+                                        <a target="_blank" href="img/TheNeighborsWindow1.jpg">
+                                            <div class="card">
+                                                <div class="card-img-top" style="background-image: url('/img/TheNeighborsWindow1.jpg')">
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="img/TheNeighborsWindow2.jpg">
+                                            <div class="card">
+                                                <div class="card-img-top" style="background-image: url('/img/TheNeighborsWindow2.jpg')"></div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="img/TheNeighborsWindow3.jpg">
+                                            <div class="card">
+                                                <div class="card-img-top" style="background-image: url('/img/TheNeighborsWindow3.jpg')"></div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <a type="button" class="btn btn-primary" href="booking.html#cardFilm6">Book Tickets</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of Modal 6 -->
+
+                    <!-- Modal 7 -->
+                    <div class="modal fade text-dark" id="TheDiswasher" tabindex="-1" role="dialog" aria-labelledby="TheDiswasherTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">The Diswasher</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body text-left">
+                                    <p>
+                                        A chef at a fine dining restaurant in New York City asks a Mexican dishwasher to find good tortillas. 100% of ticket sales from each screening will be donated to Kids in the Spotlight. </p>
+                                    <h6>Media</h6>
+
+                                    <div class="card-group">
+                                        <a target="_blank" href="/img/TheDishwasher1.jpg">
+                                            <div class="card">
+                                                <div class="card-img-top" style="background-image: url('/img/TheDiswasher1.jpg')">
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="img/TheDiswasher2.jpg">
+                                            <div class="card">
+                                                <div class="card-img-top" style="background-image: url('/img/TheDiswasher2.jpg')"></div>
+                                            </div>
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <a type="button" class="btn btn-primary" href="booking.html#cardFilm7">Book Tickets</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of Modal 7 -->
+
+                    <!-- Modal 8 -->
+                    <div class="modal fade text-dark" id="BeachDay" tabindex="-1" role="dialog" aria-labelledby="BeachDayTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">BeachDay</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body text-left">
+                                    <p> Lexi and Sam's normal day at the beach takes a dark turn when Sam suspects Lexi may have more sinister motives. Max Silver (Director, Writer, Producer) and Rachel Sklar (Producer) will participate ...</p>
+                                    <h6>Media</h6>
+
+                                    <div class="card-group">
+                                        <a target="_blank" href="img/BeachDay1.jpg">
+                                            <div class="card">
+                                                <div class="card-img-top" style="background-image: url('/img/BeachDay1.jpg')">
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="img/BeachDay2.jpg">
+                                            <div class="card">
+                                                <div class="card-img-top" style="background-image: url('/img/BeachDay2.jpg')"></div>
+                                            </div>
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <a type="button" class="btn btn-primary" href="booking.html#cardFilm8">Book Tickets</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of Modal 8 -->
+
+                    <!-- Modal 9-->
+                    <div class="modal fade text-dark" id="Westfalia" tabindex="-1" role="dialog" aria-labelledby="Westfalia" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Westfalia</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                                </div>
+                                <div class="modal-body text-left">
+                                    <p> A couple embarks on an epic road trip in an attempt to gain more followers after their Instagram rival's fame doubles overnight. Haley Finnegan (Director, Writer, Producer, Cast) and Montana Loran ...</p>
+                                    <h6>Media</h6>
+
+                                    <div class="card-group">
+                                        <a target="_blank" href="img/Westfalia1.jpg">
+                                            <div class="card">
+                                                <div class="card-img-top" style="background-image: url('/img/Westfalia1.jpg')">
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="img/Westfalia2.jpg">
+                                            <div class="card">
+                                                <div class="card-img-top" style="background-image: url('/img/Westfalia2.jpg')"></div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="img/Westfalia3.jpg">
+                                            <div class="card">
+                                                <div class="card-img-top" style="background-image: url('/img/Westfalia3.jpg')"></div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <a type="button" class="btn btn-primary" href="booking.html#cardFilm9">Book Tickets</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of Modal 9 -->
+
+                    <!-- Modal 10-->
+                    <div class="modal fade text-dark" id="Peggy" tabindex="-1" role="dialog" aria-labelledby="Peggy" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Peggy</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                                </div>
+                                <div class="modal-body text-left">
+                                    <p> Everything seems to work out perfectly for Peggy, but her social graces are put to the test when she is surrounded by admiring and covetous parents at her eight-year-old son’s birthday party. Justin O’Neal Miller (Director,
+                                        Producer, Screenwriter, Editor) will participate in a Q&A following the screening.
+
+                                    </p>
+                                    <h6>Media</h6>
+
+                                    <div class="card-group">
+                                        <a target="_blank" href="img/Peggy1.jpg">
+                                            <div class="card">
+                                                <div class="card-img-top" style="background-image: url('/img/Peggy1.jpg')">
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="img/Peggy2.jpg">
+                                            <div class="card">
+                                                <div class="card-img-top" style="background-image: url('/img/Peggy2.jpg')"></div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="img/Peggy3.jpg">
+                                            <div class="card">
+                                                <div class="card-img-top" style="background-image: url('/img/Peggy3.jpg')"></div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <a type="button" class="btn btn-primary" href="booking.html#cardFilm10">Book Tickets</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of Modal 10 -->
+
+                    <!-- Modal 11-->
+                    <div class="modal fade text-dark" id="StandingUpFallingDown" tabindex="-1" role="dialog" aria-labelledby="StandingUpFallingDown" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Standing Up Falling Down</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                                </div>
+                                <div class="modal-body text-left">
+                                    <p> A struggling stand-up comedian at a crossroads in his life returns to his hometown and finds an unlikely kindred spirit in his pot-smoking dermatologist. Matt Ratner (Director, Producer) will parti...
+
+                                    </p>
+                                    <h6>Media</h6>
+
+                                    <div class="card-group">
+                                        <a target="_blank" href="img/StandingUpFallingDown1.jpg">
+                                            <div class="card">
+                                                <div class="card-img-top" style="background-image: url('/img/StandingUpFallingDown1.jpg')">
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="img/StandingUpFallingDown2.jpg">
+                                            <div class="card">
+                                                <div class="card-img-top" style="background-image: url('/img/StandingUpFallingDown2.jpg')"></div>
+                                            </div>
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <a type="button" class="btn btn-primary" href="booking.html#cardFilm11">Book Tickets</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of Modal 11 -->
+
+                    <!-- Modal 12-->
+                    <div class="modal fade text-dark" id="RocketBoy" tabindex="-1" role="dialog" aria-labelledby="RocketBoy" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Rocket Boy</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                                </div>
+                                <div class="modal-body text-left">
+                                    <p> As we reach the 50th anniversary of the first people traveling to the moon, Rocket Boy is the account of a man who witnessed, first hand, the launch of that rocket. As he recalls the awe-inspiring eve...
+                                    </p>
+                                    <h6>Media</h6>
+
+                                    <div class="card-group">
+                                        <a target="_blank" href="img/RocketBoy1.jpg">
+                                            <div class="card">
+                                                <div class="card-img-top" style="background-image: url('/img/RocketBoy1.jpg')">
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="img/RocketBoy2.jpg">
+                                            <div class="card">
+                                                <div class="card-img-top" style="background-image: url('/img/RocketBoy2.jpg')"></div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="img/RocketBoy3.jpg">
+                                            <div class="card">
+                                                <div class="card-img-top" style="background-image: url('/img/RocketBoy3.jpg')"></div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <a type="button" class="btn btn-primary" href="booking.html#cardFilm12">Book Tickets</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of Modal 12 -->
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="d-none">
+        <!-- Take actions (CSS class names: ta-*) -->
+        <div class="container">
+            <div class="row">
+                <div class="col text-center pt-5 pb-4 border-bottom  border-dark ">
+
+                    <h4 class="mb-4">ANYONE CAN JOIN THE SHOW</h4>
+
+                    <p class="font-weight-light font-italic ta-p-underline">I want to...</p>
+                    <div class="row">
+                        <div class="col text-right">
+                            <a href="" class="btn btn-outline-dark ta-btn-borderless ta-btn-bg-info ta-btn-square ta-btn-center ">
+
+                                <span>
+                                    <h1 class="ta-h1-4x"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-film" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V1zm4 0h8v6H4V1zm8 8H4v6h8V9zM1 1h2v2H1V1zm2 3H1v2h2V4zM1 7h2v2H1V7zm2 3H1v2h2v-2zm-2 3h2v2H1v-2zM15 1h-2v2h2V1zm-2 3h2v2h-2V4zm2 3h-2v2h2V7zm-2 3h2v2h-2v-2zm2 3h-2v2h2v-2z"/>
+                                  </svg></h1>
+                                    Preview
+                                </span>
+
+                            </a>
+                        </div>
+
+                        <div class="col">
+                            <a href="" class="btn btn-outline-dark ta-btn-borderless ta-btn-bg-info ta-btn-square ta-btn-center ">
+
+                                <span>
+                                <h1 class="ta-h1-4x">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-people" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1h7.956a.274.274 0 0 0 .014-.002l.008-.002c-.002-.264-.167-1.03-.76-1.72C13.688 10.629 12.718 10 11 10c-1.717 0-2.687.63-3.24 1.276-.593.69-.759 1.457-.76 1.72a1.05 1.05 0 0 0 .022.004zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10c-1.668.02-2.615.64-3.16 1.276C1.163 11.97 1 12.739 1 13h3c0-1.045.323-2.086.92-3zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/>
+                                      </svg></h1>
+                                Attend
+                            </span>
+
+
+                            </a>
+                        </div>
+
+
+                        <div class="col text-left">
+                            <a href="" class="btn btn-outline-dark ta-btn-borderless ta-btn-bg-info ta-btn-square ta-btn-center ">
+
+                                <span>
+                                <h1 class="ta-h1-4x">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-half" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M5.354 5.119L7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.519.519 0 0 1-.146.05c-.341.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.171-.403.59.59 0 0 1 .084-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027c.08 0 .16.018.232.056l3.686 1.894-.694-3.957a.564.564 0 0 1 .163-.505l2.906-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.002 2.223 8 2.226v9.8z"/>
+                                      </svg></h1>
+                                Review
+                            </span>
+
+
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section>
+        <!-- Announcements (CSS class names: ann-*) -->
+        <div class="container ">
+            <div class="row ann-all-rows">
+                <div class="col pt-5 pb-4 border-bottom  border-dark">
+
+                    <h4 class="text-center mb-4">ANNOUNCEMENTS</h4>
+
+
+                    <div class="row mb-4 ">
+                        <div class="col-12 col-md-7">
+                            <img src="img/outdoor-festival.jpg" class="w-100" alt="">
+                        </div>
+                        <div class="col-12 col-md-5 d-flex justify-content-center align-items-center ann-div-padding">
+                            <div>
+                                <p>
+                                    <h5>Save the date! </h5>
+                                </p>
+                                <p>
+                                    <i>August 05 to 08 2021, from 6pm to midnight</i>
+                                </p>
+                                <p class="font-weight-light"> Watch it outside Boston edition is coming with hot off the press films from August 5th to 8th in Boston Public Garden, a park in Boston</p>
+                                <p>
+                                    <a href="/schedule.html" class="align-middle">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5A.5.5 0 0 0 4 8z"/>
+                                      </svg> See Schedule</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mb-4">
+
+                        <div class="col-12 col-md-5 d-flex justify-content-center align-items-center ann-div-padding">
+                            <div>
+                                <p>
+                                    <h5>Free For All!</h5>
+                                </p>
+                                <p class="font-weight-light">Shows will be free and open to everyone. These outside theaters offer a nice dose of the past with social distancing built in.</p>
+                                <p>
+                                    <a href="/booking.html" class="align-middle">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5A.5.5 0 0 0 4 8z"/>
+                                      </svg> Book Tickets</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-7">
+                            <img src="img/fall-festival.jpeg" class="w-100" alt="">
+                        </div>
+
+                    </div>
+
+
+                    <div class="row   mb-4  ">
+                        <div class="col-12 col-md-7">
+                            <img src="img/movie-festival.jpeg" class="w-100" alt="">
+                        </div>
+                        <div class="col-12 col-md-5 d-flex justify-content-center align-items-center ann-div-padding">
+                            <div>
+                                <p>
+                                    <h5>Want early access to tickets? </h5>
+                                </p>
+                                <p class="font-weight-light">Please pre-register so that we are able to estimate how many people might come and so that we can close registration if it reaches the venue’s capacity of 1,500 people.</p>
+                                <p>
+                                    <a href="/booking.html" class="align-middle">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5A.5.5 0 0 0 4 8z"/>
+                                      </svg> Pre-register</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="section-news mb-5">
+        <!-- News -->
+        <div class="container">
+            <div class="row">
+                <div class="col pt-5">
+
+                    <h4 class="text-center mb-4">LATEST FESTIVAL NEWS</h4>
+
+                    <div class="card-deck">
+                        <div class="card shadow-lg">
+                            <img class="card-img-top rounded-0" src="img/news1.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text text-right"><small class="text-muted">Last updated 3 mins ago</small></p>
+
+                                <h5 class="card-title">Staying Creative in Quarantine: Films and Resources You Can Reference</h5>
+                                <p class="card-text">There are many things to look to as inspiration during these difficult times to keep your creative energy flowing and your filmmaking dreams alive.</p>
+
+                            </div>
+                            <div class="card-footer rounded-0">
+
+                                <a href="" class="align-middle">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5A.5.5 0 0 0 4 8z"/>
+                                      </svg> Read More</a>
+
+                            </div>
+                        </div>
+                        <div class="card shadow-lg">
+                            <img class="card-img-top rounded-0" src="img/news2.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text text-right"><small class="text-muted">Last updated 5 days ago</small></p>
+
+                                <h5 class="card-title">What We’re Watching: Take Me to the Drive-In</h5>
+                                <p class="card-text">Theaters are still closed, but if you’re missing the big screen, an old classic is still an option.</p>
+
+                            </div>
+                            <div class="card-footer rounded-0">
+                                <a href="" class="align-middle">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5A.5.5 0 0 0 4 8z"/>
+                                      </svg> Read More</a>
+                            </div>
+                        </div>
+                        <div class="card shadow-lg">
+                            <img class="card-img-top rounded-0" src="img/news3.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text text-right"><small class="text-muted">Last updated 2 weeks ago</small></p>
+
+                                <h5 class="card-title">Congratulations 2020 Award Winners!</h5>
+                                <p class="card-text">Congratulations to our award winners and a big thank you to our jury! Keep reading to see who won our awards this past festival.</p>
+
+                            </div>
+                            <div class="card-footer rounded-0">
+                                <a href="" class="align-middle">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5A.5.5 0 0 0 4 8z"/>
+                                      </svg> Read More</a>
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <footer class=" bg-dark text-light footerx " id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center pt-5">
+
+                    <h4 class="mb-4">Join Our Mailing List</h4>
+                    <p class="text-muted">We're doing big things. Make sure you don't miss any of it.</p>
+                    <div class="input-group mx-auto mb-3">
+                        <input type="text" class="form-control rounded-0" placeholder="your@email.com" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-warning rounded-0 font-weight-light text-light px-4" type="button">SIGN UP</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row mt-5 ">
+                <div class="col-12 col-md-4">
+                    <nav class="nav flex-column">
+                        <a class="nav-link active" href="/booking.html">Book Tickets</a>
+                        <a class="nav-link" href="#carouselFilmIndicators">Films</a>
+                        <a class="nav-link" href="/schedule.html">Schedule</a>
+                        <a class="nav-link " href="#footer" disabled>About Us</a>
+                        <a class="nav-link " href="https://www.boston.gov/news">City of Boston</a>
+                        <a class="nav-link " href="https://www.boston.gov/parks/public-garden">Boston Public Garden</a>
+
+
+                    </nav>
+                    <p class="mt-3">
+                        <a class="mr-4 ml-3" href="https://twitter.com/">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" class="navbar-nav-svg" viewBox="0 0 512 416.32" role="img"><title>Twitter</title><path fill="currentColor" d="M160.83 416.32c193.2 0 298.92-160.22 298.92-298.92 0-4.51 0-9-.2-13.52A214 214 0 0 0 512 49.38a212.93 212.93 0 0 1-60.44 16.6 105.7 105.7 0 0 0 46.3-58.19 209 209 0 0 1-66.79 25.37 105.09 105.09 0 0 0-181.73 71.91 116.12 116.12 0 0 0 2.66 24c-87.28-4.3-164.73-46.3-216.56-109.82A105.48 105.48 0 0 0 68 159.6a106.27 106.27 0 0 1-47.53-13.11v1.43a105.28 105.28 0 0 0 84.21 103.06 105.67 105.67 0 0 1-47.33 1.84 105.06 105.06 0 0 0 98.14 72.94A210.72 210.72 0 0 1 25 370.84a202.17 202.17 0 0 1-25-1.43 298.85 298.85 0 0 0 160.83 46.92"></path></svg>
+                        </a>
+                        <a class="mr-4" href="https://facebook.com">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"><path fill="currentColor" d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z"/></svg>
+                        </a>
+                        <a href="https://instagram.com">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                    </p>
+                </div>
+                <div class="col-12 col-md-8">
+                    <p>Thank you for your interest in the Watch It Outside Film Festival. We are excited to have you cover the festival. The following resources are available to members of the media to view and download. All images are copyrighted and may
+                        only be used with proper credits and/or “Courtesy of Watch It Outside Film Festival.” If you need additional images or have any questions, feel free to contact us at press@wwfilmfest.com.</p>
+                    <p class="text-muted">© 2020 Watch It Outside Film Festival. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+
+</html>

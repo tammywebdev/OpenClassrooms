@@ -1,0 +1,114 @@
+    body {
+        background-color: transparent;
+    }
+    
+    header {
+        background-image: url("img/drive-in-banner.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    
+    .header-div-tall {
+        min-height: 350px;
+    }
+    
+    .header-text-bottom {
+        margin-top: 120px;
+    }
+    
+    .section-news .card-img-top {
+        height: 200px;
+    }
+    
+    .section-news .card-footer {
+        background-color: white;
+        border-top: 0;
+    }
+    
+    .footerx {
+        min-height: 680px;
+    }
+    
+    .footerx .input-group {
+        width: 50%;
+    }
+    
+    .footerx a {
+        color: white;
+    }
+    
+    .footerx a:hover {
+        text-decoration: underline;
+    }
+    
+    .section-schedule .rowx>div:first-child {
+        border-width: 3px !important;
+    }
+    
+    .rowx:hover {
+        background-color: rgba(241, 112, 0, 0.15) !important;
+    }
+    
+    .ax {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        color: var(--dark);
+    }
+    
+    .rowx>div:first-child .ax {
+        justify-content: center;
+    }
+    
+    .rowx>div:last-child {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .div-container {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+    
+    .imgx {
+        height: 150px;
+    }
+    
+    @media (max-width: 576px) {
+        /* header and footer */
+        .navbar h3,
+        h1 {
+            font-size: 1.5rem;
+        }
+        .navbar-toggler {
+            background-color: var(--dark);
+        }
+        .navbar-collapse {
+            background-color: rgba(52, 58, 64, 0.7);
+            padding: 1rem;
+        }
+        .modal-content {
+            width: 70%;
+        }
+        .ann-all-rows .row:nth-of-type(even) {
+            flex-direction: column-reverse;
+        }
+        .footerx .input-group {
+            flex-direction: column;
+        }
+        .footerx .input-group * {
+            width: 100%;
+        }
+        /* schedule section */
+        div.order-2.order-md-1.col-4.col-md-2 {
+            border-right: 0 !important;
+        }
+        div.order-1 .ax {
+            font-weight: bold;
+        }
+    }
