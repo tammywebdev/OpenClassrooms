@@ -10,6 +10,8 @@ The following projects are listed in the order of time: most recent projects are
 
 ## To Do list app
 
+Live demo: https://todo-list-a-57bf7.web.app/
+
 This project is a single page application that can work offline (without internet connectivity) for managing a personal To Do list.
 
 The [To Do list app](https://github.com/tammywebdev/OpenClassrooms/blob/main/projects/todo-list-app/README.md) implements the Model View Controller design pattern using vanilla javascript.

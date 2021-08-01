@@ -2,6 +2,8 @@
 
 This is a short specification about the todo apps that follows the Model View Controller (MVC) design pattern. The app uses pure (vanilla) javascript without any dependencies other than the MVC base components.
 
+Live demo: https://todo-list-a-57bf7.web.app/
+
 ## Model View Controller (MVC) design pattern
 
 The MVC pattern divides the whole application into model, view or controller sections. Each section of the code has a distinct purpose:
