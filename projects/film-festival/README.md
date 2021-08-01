@@ -3,6 +3,8 @@
 This is a static website that is responsive to tablet and mobile screen sizes.
 On smaller screens, the navigation menu is collapsed and all content is shown in one column so that users can easily scroll from top to bottom of the web pages.
 
+Live demo: https://film-festival-3e862.web.app
+
 ## Getting Started
 
 Just open the `index.html` page in any browser to play.

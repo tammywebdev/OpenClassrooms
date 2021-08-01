@@ -34,6 +34,8 @@ The [Board Game](https://github.com/tammywebdev/OpenClassrooms/blob/main/project
 
 ## Film Festival
 
+Live demo: https://film-festival-3e862.web.app
+
 This is a responsive website. It is responsive to tablet and mobile screen sizes.
 
 The [Film Festival website](https://github.com/tammywebdev/OpenClassrooms/blob/main/projects/film-festival/README.md) is built with Twitter Bootstrap.
