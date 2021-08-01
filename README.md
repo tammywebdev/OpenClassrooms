@@ -20,6 +20,8 @@ In order to complete this project, I had to take over the app, fix critical bugs
 
 ## Restaurant Review Site
 
+Live demo: https://restaurant-review-site-d69bd.web.app
+
 This project is a single page application for searching and rating restaurants interactively on a map UI.
 
 The [Restaurant Review Site](https://github.com/tammywebdev/OpenClassrooms/blob/main/projects/restaurant-review-app/README.md) uses React Js, Google Maps API, React Bootstrap.
