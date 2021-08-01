@@ -2,6 +2,8 @@
 
 This is a turn-based browser game built with pure (vanilla) javascript without any dependencies. It also uses Twitter Bootstrap for the layout.
 
+Live demo: https://board-game-64308.web.app/
+
 ## Getting Started
 
 There's no dependencies, so you won't need to do any installation or building the app. Just open the `index.html` page in any browser to play.
