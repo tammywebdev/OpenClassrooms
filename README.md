@@ -26,6 +26,8 @@ The [Restaurant Review Site](https://github.com/tammywebdev/OpenClassrooms/blob/
 
 ## Board Game
 
+Live demo: https://board-game-64308.web.app/
+
 This is a browser-based game. It can support 2 players on the same computer to play by turn.
 
 The [Board Game](https://github.com/tammywebdev/OpenClassrooms/blob/main/projects/board-game/README.md) is built with pure (vanilla) javascript without any dependencies. It also uses Twitter Bootstrap for the layout.
