@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Shortener By Tammy WebDev</title>
+</head>
+
+<body>
+    <h1>Redirecting you to <span id="destination"></span></h1>
+    <h3>© 2021 Tammy Su.</h3>
+    <script>
+        const shortLinks = {
+            "g": "https://google.com",
+            "oc.git": "https://github.com/tammywebdev/OpenClassrooms",
+            "todo.md": "https://github.com/tammywebdev/OpenClassrooms/blob/main/projects/todo-list-app/README.md",
+            "restaurant.md": "https://github.com/tammywebdev/OpenClassrooms/blob/main/projects/restaurant-review-app/README.md"
+        };
+        const currentURL = location.href;
+        const urlParts = currentURL.split('/');
+        const keyword = urlParts[urlParts.length - 1];
+        const newURL = shortLinks[keyword];
+        const destinationSpan = document.getElementById('destination');
+        destinationSpan.innerHTML = newURL;
+
+        const timeout = 3 * 1000;
+        setTimeout(() => {
+            location.href = newURL;
+        }, timeout);
+    </script>
+</body>
+
+</html>
