@@ -17,7 +17,7 @@ class RestaurantItem extends React.Component {
   render() {
     const id = 'collapseRestaurant' + this.props.restaurantIndex;
     const href = '#' + id;
-    const streetViewPhotoURL = `https://maps.googleapis.com/maps/api/streetview?size=400x400&location=${this.props.lat},${this.props.lng}&fov=80&heading=70&pitch=0&key=AIzaSyAk0HPZEh3uKLSbO1gkRM_woxaYR4TxlcU`
+    const streetViewPhotoURL = `https://maps.googleapis.com/maps/api/streetview?size=400x400&location=${this.props.lat},${this.props.lng}&fov=80&heading=70&pitch=0&key=<ENTER_API_KEY>`
 
     const ratings = this.props.ratings.map((rating) => {
       if (!rating.comment) {

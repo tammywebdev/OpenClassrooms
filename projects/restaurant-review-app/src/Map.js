@@ -42,7 +42,7 @@ class Map extends React.Component {
             <>
                 <GoogleMapReact
                     bootstrapURLKeys={{
-                        key: "ENTER_GOOGLE_MAPS_API_KEY_HERE", libraries: ['places']
+                        key: "<ENTER_API_KEY>", libraries: ['places']
                     }}
                     center={this.state}
                     defaultZoom={14}
