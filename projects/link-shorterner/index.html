@@ -1,71 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Link Shortener By Tammy WebDev</title>
     <style>
-        /* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 
-        html, body, div, span, applet, object, iframe,
-        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-        a, abbr, acronym, address, big, cite, code,
-        del, dfn, em, img, ins, kbd, q, s, samp,
-        small, strike, strong, sub, sup, tt, var,
-        b, u, i, center,
-        dl, dt, dd, ol, ul, li,
-        fieldset, form, label, legend,
-        table, caption, tbody, tfoot, thead, tr, th, td,
-        article, aside, canvas, details, embed,
-        figure, figcaption, footer, header, hgroup,
-        menu, nav, output, ruby, section, summary,
-        time, mark, audio, video {
-            margin: 0;
-            padding: 0;
-            border: 0;
-            font-size: 100%;
-            font: inherit;
-            vertical-align: baseline;
-        }
-        /* HTML5 display-role reset for older browsers */
-        article, aside, details, figcaption, figure,
-        footer, header, hgroup, menu, nav, section {
-            display: block;
-        }
         body {
-            line-height: 1;
+            background-color: black;
+            color: cornflowerblue;
+            font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+            font-size: large;
         }
-        ol, ul {
-            list-style: none;
+
+        a,
+        a:visited {
+            color: whitesmoke;
+            text-decoration: none;
         }
-        blockquote, q {
-            quotes: none;
-        }
-        blockquote:before, blockquote:after,
-        q:before, q:after {
-            content: '';
-            content: none;
-        }
-        table {
-            border-collapse: collapse;
-            border-spacing: 0;
+
+        a:hover {
+            text-decoration: underline;
         }
 
         .container {
-
-            font-family: "Arial", "serif";
-            font-size: x-large;
-
             height: 100vh;
             display: grid;
 
             grid-template-columns: .3fr auto 1fr;
-            grid-template-rows: auto 3rem 2rem 5rem auto;
+            grid-template-rows: auto 3rem 3rem 5rem auto;
             grid-template-areas:
                                 ". . ."
                                 ". text ."
@@ -79,63 +43,70 @@
             grid-area: text;
             color: darkgray;
         }
+
         .title {
             grid-area: title;
         }
+
         .link {
             grid-area: link;
         }
+
         .footer {
             grid-area: footer;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h2 class="text">Redirecting you to</h2>
-        <h1 class="title" id="title">Destination</h1>
-        <h4 class="link"><a href="#" id="URL">URL</a></h4>
-        <h3 class="footer">© 2021 Tammy Su.</h3>
-    </div>
+<div class="container">
+    <h2 class="text">Redirecting you to</h2>
+    <h1 class="title" id="title">Destination</h1>
+    <h4 class="link"><a href="#" id="URL">URL</a></h4>
+    <h3 class="footer">© 2021 Tammy Su.</h3>
+</div>
+<script>
+    const shortLinks = {
+        "oc.git": {
+            "title": "OpenClassrooms Projects",
+            "URL": "https://github.com/tammywebdev/OpenClassrooms"
+        },
+        "todo.md": {
+            "title": "Todo List App",
+            "URL": "https://github.com/tammywebdev/OpenClassrooms/blob/main/projects/todo-list-app/README.md"
+        },
+        "restaurant.md": {
+            "title": "Restaurant Review Site",
+            "URL": "https://github.com/tammywebdev/OpenClassrooms/blob/main/projects/restaurant-review-app/README.md"
+        },
+        "game.md": {
+            "title": "Board Game",
+            "URL": "https://github.com/tammywebdev/OpenClassrooms/blob/main/projects/board-game/README.md"
+        },
+        "film.md": {
+            "title": "Film Festival",
+            "URL": "https://github.com/tammywebdev/OpenClassrooms/blob/main/projects/film-festival/README.md"
+        }
+    };
+    const currentURL = location.href;
+    const urlParts = currentURL.split('/');
+    const keyword = urlParts[urlParts.length - 1];
+    const project = shortLinks[keyword] || shortLinks["oc.git"];
+    const linkElement = document.getElementById('URL');
+    linkElement.textContent = project.URL;
+    linkElement.href = project.URL;
 
-    <script>
-        const shortLinks = {
-            "oc.git": {
-                "title":"OpenClassrooms Projects",
-                "URL":"https://github.com/tammywebdev/OpenClassrooms"
-            },
-            "todo.md": {
-                "title":"Todo List App",
-                "URL":"https://github.com/tammywebdev/OpenClassrooms/blob/main/projects/todo-list-app/README.md"
-            },
-            "restaurant.md": {
-                "title": "Restaurant Review Site",
-                "URL":"https://github.com/tammywebdev/OpenClassrooms/blob/main/projects/restaurant-review-app/README.md"
-            },
-            "game.md": {
-                "title": "Board Game",
-                "URL":"https://github.com/tammywebdev/OpenClassrooms/blob/main/projects/board-game/README.md"
-            },
-            "film.md": {
-                "title": "Film Festival",
-                "URL":"https://github.com/tammywebdev/OpenClassrooms/blob/main/projects/film-festival/README.md"
-            },
-        };
-        const currentURL = location.href;
-        const urlParts = currentURL.split('/');
-        const keyword = urlParts[urlParts.length - 1];
-        const project = shortLinks[keyword];
-        const titleElement = document.getElementById('title');
-        titleElement.textContent = project.title;
-        const linkElement = document.getElementById('URL');
-        linkElement.textContent = project.URL;
-        linkElement.href = project.URL;
-
-        const timeout = 3 * 1000;
-        setTimeout(() => {
-            // location.href = project.URL;
-        }, timeout);
-    </script>
+    const titleElement = document.getElementById('title');
+    let remainingSeconds = 5;
+    const refresh = () => {
+        remainingSeconds = remainingSeconds - 1;
+        if (remainingSeconds < 1) {
+            location.href = project.URL;
+            return;
+        }
+        titleElement.textContent = `${project.title} in ${remainingSeconds}`;
+    };
+    refresh();
+    setInterval(refresh, 1000);
+</script>
 </body>
-
 </html>
