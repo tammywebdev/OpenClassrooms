@@ -6,30 +6,134 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Link Shortener By Tammy WebDev</title>
-</head>
+    <style>
+        /* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed,
+        figure, figcaption, footer, header, hgroup,
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+        /* HTML5 display-role reset for older browsers */
+        article, aside, details, figcaption, figure,
+        footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+        body {
+            line-height: 1;
+        }
+        ol, ul {
+            list-style: none;
+        }
+        blockquote, q {
+            quotes: none;
+        }
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content: '';
+            content: none;
+        }
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        .container {
+
+            font-family: "Arial", "serif";
+            font-size: x-large;
+
+            height: 100vh;
+            display: grid;
+
+            grid-template-columns: .3fr auto 1fr;
+            grid-template-rows: auto 3rem 2rem 5rem auto;
+            grid-template-areas:
+                                ". . ."
+                                ". text ."
+                                ". title ."
+                                ". link ."
+                                ". footer ."
+                                ". . .";
+        }
+
+        .text {
+            grid-area: text;
+            color: darkgray;
+        }
+        .title {
+            grid-area: title;
+        }
+        .link {
+            grid-area: link;
+        }
+        .footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
 <body>
-    <h1>Redirecting you to <span id="destination"></span></h1>
-    <h3>© 2021 Tammy Su.</h3>
+    <div class="container">
+        <h2 class="text">Redirecting you to</h2>
+        <h1 class="title" id="title">Destination</h1>
+        <h4 class="link"><a href="#" id="URL">URL</a></h4>
+        <h3 class="footer">© 2021 Tammy Su.</h3>
+    </div>
+
     <script>
         const shortLinks = {
-            "g": "https://google.com",
-            "oc.git": "https://github.com/tammywebdev/OpenClassrooms",
-            "todo.md": "https://github.com/tammywebdev/OpenClassrooms/blob/main/projects/todo-list-app/README.md",
-            "restaurant.md": "https://github.com/tammywebdev/OpenClassrooms/blob/main/projects/restaurant-review-app/README.md",
-            "game.md": "https://github.com/tammywebdev/OpenClassrooms/blob/main/projects/board-game/README.md",
-            "film.md": "https://github.com/tammywebdev/OpenClassrooms/blob/main/projects/film-festival/README.md",
+            "oc.git": {
+                "title":"OpenClassrooms Projects",
+                "URL":"https://github.com/tammywebdev/OpenClassrooms"
+            },
+            "todo.md": {
+                "title":"Todo List App",
+                "URL":"https://github.com/tammywebdev/OpenClassrooms/blob/main/projects/todo-list-app/README.md"
+            },
+            "restaurant.md": {
+                "title": "Restaurant Review Site",
+                "URL":"https://github.com/tammywebdev/OpenClassrooms/blob/main/projects/restaurant-review-app/README.md"
+            },
+            "game.md": {
+                "title": "Board Game",
+                "URL":"https://github.com/tammywebdev/OpenClassrooms/blob/main/projects/board-game/README.md"
+            },
+            "film.md": {
+                "title": "Film Festival",
+                "URL":"https://github.com/tammywebdev/OpenClassrooms/blob/main/projects/film-festival/README.md"
+            },
         };
         const currentURL = location.href;
         const urlParts = currentURL.split('/');
         const keyword = urlParts[urlParts.length - 1];
-        const newURL = shortLinks[keyword];
-        const destinationSpan = document.getElementById('destination');
-        destinationSpan.innerHTML = newURL;
+        const project = shortLinks[keyword];
+        const titleElement = document.getElementById('title');
+        titleElement.textContent = project.title;
+        const linkElement = document.getElementById('URL');
+        linkElement.textContent = project.URL;
+        linkElement.href = project.URL;
 
         const timeout = 3 * 1000;
         setTimeout(() => {
-            location.href = newURL;
+            // location.href = project.URL;
         }, timeout);
     </script>
 </body>
