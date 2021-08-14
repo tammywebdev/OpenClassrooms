@@ -107,10 +107,16 @@
             location.href = project.URL;
             return;
         }
-        titleElement.textContent = `${project.title} in ${remainingSeconds}`;
+        titleElement.textContent = `${project.title} in ${remainingSeconds}. (Press ESC to stop)`;
     };
     refresh();
-    setInterval(refresh, 1000);
+    const counter = setInterval(refresh, 1000);
+    document.addEventListener('keyup',e =>{
+        if (e.key === "Escape") { // escape key maps to keycode `27`
+            clearInterval(counter);
+            titleElement.textContent = `${project.title} manually. (ESC key pressed)`;
+        }
+    });
 </script>
 
 <!-- The core Firebase JS SDK is always required and must be listed first -->
