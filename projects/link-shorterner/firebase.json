@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "linker-d2148",
     "public": "/",
     "ignore": [
       "firebase.json",
