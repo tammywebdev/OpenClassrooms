@@ -8,6 +8,22 @@ This repository contains the projects that I completed and presented to professi
 
 The following projects are listed in the order of time: most recent projects are listed on top, least recent projects are listed further down the list.
 
+## Link shortener
+
+Live demo: https://tammyweb.dev
+
+This project is a static website that translate short links to full ones.
+
+The [Link shortener website](https://github.com/tammywebdev/OpenClassrooms/blob/main/projects/link-shortener) has only one `index.html` page.
+
+Example short links are:
+- https://tammyweb.dev/oc.md redirects to this page.
+- https://tammyweb.dev/todo.md redirects to https://github.com/tammywebdev/OpenClassrooms/blob/main/projects/todo-list-app/README.md.
+- https://tammyweb.dev/restaurant.md redirects to https://github.com/tammywebdev/OpenClassrooms/blob/main/projects/restaurant-review-app/README.md.
+- https://tammyweb.dev/game.md redirects to https://github.com/tammywebdev/OpenClassrooms/blob/main/projects/board-game/README.md.
+- https://tammyweb.dev/film.md redirects to https://github.com/tammywebdev/OpenClassrooms/blob/main/projects/film-festival/README.md.
+
+
 ## To Do list app
 
 Live demo: https://todo-list-a-57bf7.web.app/
