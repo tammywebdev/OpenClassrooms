@@ -1,8 +1,9 @@
 # About Me
 
-Hi, my name is Tammy. I am a [Front-end web developer,  React Javascript Developer](https://www.linkedin.com/in/tammywebdev/). Currently, I am seeking a work opportunity in a remote team to build and maintain web applications.
+Hi, my name is Tammy. I am a Front-end web developer, specialing in React Javascript ([LinkedIn profile](https://www.linkedin.com/in/tammywebdev/)).
+Currently, I am seeking a work opportunity in a remote team to build and maintain web applications.
 
-This repository is a collection of my highlight projects that I have developed recently at OpenClassrooms.
+This repository is a collection of highlight projects that I have developed recently at OpenClassrooms.
 
 
 # About OpenClassrooms
