@@ -1,10 +1,17 @@
-# OpenClassrooms
+# About Me
+
+Hi, my name is Tammy. I am a [Front-end web developer,  React Javascript Developer](https://www.linkedin.com/in/tammywebdev/). Currently, I am seeking a work opportunity in a remote team to build and maintain web applications.
+
+This repository is a collection of my highlight projects that I have developed recently at OpenClassrooms.
+
+
+# About OpenClassrooms
 
 [OpenClassrooms](https://openclassrooms.com) is Europe’s largest online education platform. It offers the [Frontend Developer path](https://openclassrooms.com/en/paths/61-front-end-developer) that has 9 projects and is equivalent to a Bachelor's-level diploma.
 
 This repository contains the projects that I completed and presented to professional assessors.
 
-# Projects
+# My Projects
 
 The following projects are listed in the order of time: most recent projects are listed on top, least recent projects are listed further down the list.
 
