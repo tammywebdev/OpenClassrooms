@@ -52,7 +52,7 @@ The [Film Festival website](https://github.com/tammywebdev/OpenClassrooms/blob/m
 
 # Personal Project
 
-After completing OpenClassrooms projects, I continue to improve my coding skill with my personal web project below.
+After completing OpenClassrooms projects, I continue to improve my coding skills by building personal projects.
 
 ## Link shortener
 
