@@ -26,10 +26,11 @@
 
         .container {
             height: 100vh;
+            max-width: 90vw;
             display: grid;
 
-            grid-template-columns: .3fr auto 1fr;
-            grid-template-rows: auto 3rem 3rem 5rem auto;
+            grid-template-columns: 1fr 8fr 1fr;
+            grid-template-rows: auto minmax(3rem, max-content) minmax(3rem, max-content) 5rem auto;
             grid-template-areas:
                                 ". . ."
                                 ". text ."
@@ -50,10 +51,23 @@
 
         .link {
             grid-area: link;
+            word-break: break-all;
         }
 
         .footer {
             grid-area: footer;
+        }
+
+        /* Portrait and Landscape */
+        @media only screen
+        and (max-device-width: 480px) {
+            .title {
+                font-size: medium;
+            }
+
+            .link {
+                font-size: medium;
+            }
         }
     </style>
 </head>
